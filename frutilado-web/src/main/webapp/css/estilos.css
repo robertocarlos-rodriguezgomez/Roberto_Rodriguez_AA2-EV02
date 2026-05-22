@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2933;
+}
+
+.contenedor {
+    max-width: 860px;
+    margin: 48px auto;
+    padding: 0 24px;
+}
+
+.contenedor.ancho {
+    max-width: 1080px;
+}
+
+.encabezado {
+    padding: 32px;
+    background: #ffffff;
+    border: 1px solid #dde5ef;
+    border-radius: 8px;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.etiqueta {
+    margin: 0 0 8px;
+    color: #0f766e;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0;
+}
+
+h1 {
+    margin: 0 0 12px;
+    color: #17324d;
+    font-size: 28px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.acciones {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+a,
+.boton,
+button {
+    display: inline-block;
+    background: #17324d;
+    color: #ffffff;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.secundario {
+    background: #0f766e;
+}
+
+.formulario {
+    display: grid;
+    gap: 10px;
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #dde5ef;
+    border-radius: 8px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c9d4e2;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border: 1px solid #dde5ef;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #dde5ef;
+    text-align: left;
+}
+
+th {
+    background: #17324d;
+    color: #ffffff;
+}
+
+.mensaje {
+    padding: 12px 14px;
+    background: #e8f7ef;
+    border: 1px solid #9bd3b3;
+    color: #175c35;
+    border-radius: 6px;
+}
+
+@media (max-width: 640px) {
+    .barra,
+    .acciones {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}
